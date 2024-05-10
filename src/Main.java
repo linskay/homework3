@@ -31,8 +31,8 @@ public class Main {
         byte spmhForMin = (byte) (spmh / time);
         byte time20Min = 20;
         short timeSutki = 24*60;
-        int time3Day = (int) (timeSutki*3);
-        int timeMonth = (int) (timeSutki*31);
+        int time3Day = timeSutki*3;
+        int timeMonth = timeSutki*31;
         System.out.println("За " + time20Min + " мин машина произвела " + (time20Min*spmhForMin) + " штук бутылок");
         System.out.println("За " + timeSutki + " мин (сутки) машина произвела " + (timeSutki*spmhForMin) + " штук бутылок");
         System.out.println("За " + time3Day + " мин (3 дня)  машина произвела " + (time3Day*spmhForMin) + " штук бутылок");
@@ -49,7 +49,7 @@ public class Main {
         banansGr = (short) (banans*banansGr);
         short milk = 200;
         float milkGr = 1.05f;
-        milkGr = (float) (milkGr*milk);
+        milkGr = milkGr*milk;
         byte icecream = 2;
         short icecreamGr = 100;
         icecreamGr = (short) (icecream*icecreamGr);
